@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-neutral-50 via-blue-50 to-neutral-50 text-neutral-900 font-sans;
+  min-height: 100vh;
+}
+
+/* Smooth transitions */
+button,
+a {
+  @apply transition-all duration-200;
+}
+
+/* Custom scrollbar styling */
+.column-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.column-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.column-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.column-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.column-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Input & textarea styling */
+input[type='text'],
+input[type='date'],
+textarea,
+select {
+  @apply bg-white border border-neutral-200 rounded-lg px-4 py-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  @apply placeholder-neutral-400 transition-all duration-200;
+}
+
+/* Modern card styles */
+.card-modern {
+  @apply bg-white rounded-xl border border-neutral-100 shadow-sm-modern;
+  @apply hover:shadow-modern transition-shadow duration-200;
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  @apply bg-gradient-to-r from-primary-500 to-primary-600;
+}
+
+.gradient-accent {
+  @apply bg-gradient-to-r from-accent-500 to-accent-600;
+}
