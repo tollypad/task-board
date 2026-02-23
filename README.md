@@ -2,7 +2,7 @@
 
 Modern Kanban-style task management with drag-and-drop, beautiful UI, and optional MongoDB persistence.
 
-**Live Demo:** Coming soon (deploy to Vercel)  
+**Live Demo:** https://task-board-lemon-nine.vercel.app  
 **GitHub:** https://github.com/tollypad/task-board
 
 ## Features
@@ -11,8 +11,8 @@ Modern Kanban-style task management with drag-and-drop, beautiful UI, and option
 - **Four Columns** - To Do, In Progress, Review, Done (customize)
 - **Task Management** - Create, edit, delete with priorities & due dates
 - **Two Storage Modes:**
-  - 📱 Local Storage (offline-first, works instantly)
-  - 🗄️ MongoDB (optional cloud sync with one env variable)
+  -  Local Storage (offline-first, works instantly)
+  -  MongoDB (optional cloud sync with one env variable)
 - **Responsive** - Looks great on all devices
 - **Modern UI** - Gradients, animations, polished interactions
 
